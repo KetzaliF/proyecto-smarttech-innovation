@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+    /* -------- COLORS --------*/
+    --white: rgb(255, 255, 255);
+    --black: rgb(0, 0, 0);
+    --gray: rgb(128, 128, 128);
+    --purple: rgb(156, 87, 203);
+    --line-blue: rgb(0, 119, 182);
+    --bg-light-blue: rgb(236, 246, 255);
+    --bg-header: linear-gradient(70deg, rgb(0, 180, 216) 0, rgb(0, 119, 182) 40%, rgb(1, 42, 74) 100%);
+    --button-color: linear-gradient(140deg, rgb(156, 87, 203) 0, rgb(113, 67, 191) 100%);
+    --icons-hover: rgb(0, 180, 216);
+    --button-color-hover: linear-gradient(280deg, rgb(156, 87, 203) 0, rgb(113, 67, 191) 100%);
+    /* -------- FONTS --------*/
+    --logo-slogan: 'Bebas Neue', cursive;
+    --font-main: 'Poppins', sans-serif;
+}
+
+body{
+    font-size: 14px;
+    position: relative;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: rgba(0, 180, 216, 0.8);
+    border-radius: 20px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER PRINCIPAL */
+
+.header{
+    width: 100%;
+    height: 100vh;
+    font-size: var(--font-main);
+    background-image: url(assets/bg-team.jpg);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav{
+    width: 100%;
+    background: var(--bg-header);
+    padding: 22.5px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header__logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo-img{
+    height: 26.25px;
+    margin-right: 22.5px;
+}
+
+.header__logo-name{
+    font-size: 1.60em;
+    font-family: var(--logo-slogan);
+    color: var(--white);
+}
+
+.header__menu{
+    width: 100%;
+    max-width: 370px;
+    margin: 7.5px 0;
+}
+
+.container-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.header__menu-links a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 0.75em;
+    transition: all 0.9s;
+}
+
+.header__menu-links:hover a{
+    color: var(--icons-hover);
+}
+
+.header__content{
+    width: 100%;
+    height: calc(100% - 110.4px);
+    background: rgba(1, 42, 74,.4);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--logo-slogan);
+    text-align: center;
+}
+
+.header__content-slogan{
+    font-size: 2.14em;
+}
+
+.header__separator{
+    background: var(--white);
+    height: 2.25px;
+    border: none;
+    border-radius: 10px;
+    margin: 7.5px 0 15px 0;
+}
+
+.header__content-company{
+    font-size: 1.60em;
+}
+
+/* SECTION 1 */
+
+.container-section{
+    background: var(--bg-light-blue);
+    padding-top: 37.5px;
+    font-family: var(--font-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.section__card{
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 37.5px;
+}
+
+.section__icon{
+    width: 45px;
+    height: auto;
+    margin-right: 22.5px;
+}
+
+.section__card-info-title{
+    font-size: 1.17em;
+    font-weight: 600;
+}
+
+.section__card-info-desc{
+    font-size: 0.75em;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+/* WHY CHOOSE US */
+
+.why-choose-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 45PX;
+}
+.card1{
+    width: 100%;
+    max-width: 487.5px;
+    height: 470.25px;
+    background-image: url(assets/whyChoose.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sub-title{
+    font-family: var(--font-main);
+    font-size: 1.87em;
+    font-weight: 600;
+}
+hr.one{
+    width: 60%;
+    height: 5px;
+    border: none;
+    background-color: var(--purple);
+    border-radius: 10px;
+    margin: 30px 0;
+}
+.sub{
+    font-family: var(--font-main);
+    font-size: 0.91em;
+    font-weight: 400;
+    text-align: justify;
+}
+.card2{
+    padding: 0 15px;
+    margin-top: 30px;
+}
+
+/* TESTIMONIALS */
+
+.testimonials {
+    font-family: var(--font-main);
+    background: var(--bg-light-blue);
+    width: 100%;
+    margin-top: 45px;
+    padding: 0 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonials__top {
+    width: 100%;
+
+    margin: 30px 0;
+    text-align: center;
+}
+
+.top__title {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.top__line {
+    width: 50%;
+    max-width: 115px;
+    height: 4px;
+    border: none;
+    border-radius: 35px;
+    background: var(--purple);
+    margin: 15px auto;
+}
+
+.top__copy {
+    font-size: 1.07em;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.testimonials__grid {
+    width: 100%;
+    display: grid;
+    gap: 30px;
+    margin-bottom: 37.5px;
+}
+
+.testimonials__card {
+    width: 90%;
+    background: var(--white);
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.card__user {
+    display: flex;
+    align-items: center;
+}
+
+
+.user__img {
+    width: 52.5px;
+    height: 52.5px;
+    border-radius: 50px;
+
+    margin: 0 25px 10px 0;
+}
+
+.info__name {
+    font-size: 1.07em;
+    font-weight: 700;
+}
+
+.info__date {
+    font-size: .86em;
+    color: var(--gray);
+    font-weight: 400;
+}
+
+.testimonials__testimony {
+    font-size: .80em;
+    text-align: justify;
+    color: var(--gray);
+    font-weight: 400;
+}
+
+/* FOOTER */
+
+.footer {
+    width: 100%;
+    background: var(--bg-light-blue);
+}
+
+.smarttech {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.smarttech__logo {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    padding: 30px 0 30px 20px;
+}
+
+.logo__footer {
+    height: 35px;
+    margin-right: 30px;
+}
+
+.logo__title {
+    text-align: center;
+    font-family: var(--logo-slogan);
+    font-size: 1.60em;
+    font-weight: normal;
+}
+
+.smarttech__pay {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+    padding: 0 20px;
+}
+
+.smarttech__copy {
+    text-align: justify;
+    padding: 0 20px 30px 20px;
+}
+
+.payment-methods {
+    width: 46.67px;
+    height:26.25px ;
+}
+
+.contact {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.us {
+    width: 100%;
+
+    padding: 20px;
+}
+
+.us__title {
+    font-size: .92em;
+    font-weight: 500;
+    text-align: center;
+}
+
+.us__methods {
+    display: flex;
+    align-items: center;
+}
+
+.method__title {
+    font-size: .80em;
+    font-weight: 400;
+    padding: 10px;
+    
+}
+
+.social {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.social__title {
+    font-size: .92em;
+    font-weight: 500;
+    text-align: center;
+}
+
+.social-media {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.copyrigth {
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.copyrigth__p {
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+@media screen and (min-width: 500px) and (max-width:1030px){
+    body{
+        font-size: 15px;
+    }
+
+    /* HEADER PRINCIPAL */
+
+    .nav{
+        padding: 22.5px 52.5px 22.5px 52.5px;
+    }
+
+    .header__logo-img{
+        height: 37.5px;
+    }
+    
+    .header__logo-name{
+        font-size: 2.14em;
+    }
+
+    .header__menu-links a{
+        font-size: 1.07em;
+    }
+
+    .header__menu{
+        margin: 0;
+    }
+
+    .header__content{
+        width: 100%;
+        height: calc(100% - 86.6px);
+        background: rgba(1, 42, 74,.4);
+    }
+
+    .header__content-slogan{
+        font-size: 4.82em;
+    }
+    
+    .header__separator{
+        height: 4.5px;
+    }
+    
+    .header__content-company{
+        font-size: 3.21em;
+    }
+
+    /* SECTION 1 */
+
+    .container-section{
+        padding: 37.5px 52.5px 0 52.5px;
+        justify-content: space-evenly;
+    } 
+
+    /* WHY CHOOSE US */
+    .why-choose-us{
+        flex-direction: row;
+        padding: 0 52.5px;
+    }
+    .card2{
+        width: 50%;
+        margin-top: 0px;
+    }
+    .card1{
+        width: 322.5px;
+        height: 450px;
+        border-radius: 10px;
+    }
+
+    /* TESTIMONIALS */
+
+    .testimonials{
+        padding: 0 52.5px;
+    }
+
+    .testimonials__grid {
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+
+    /* FOOTER */
+
+    .footer{
+        padding-top: 30px;
+    }
+    
+    .media {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .smarttech {
+        width: 45%;
+    }
+    
+    .smarttech__logo{
+        padding: 20px 0 20px 20px;
+    }
+    
+    .smarttech__logo {
+        width: 100%;
+    }
+    
+    .logo__title {
+        padding-left: 5% ;
+    }
+    .contact {
+        width: 40%;
+    }
+    
+    .copyrigth__p {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1030px) and (max-width: 1700px){
+    body{
+        font-size: 16px;
+    }
+    
+    /* HEADER PRINCIPAL */
+    
+    .nav{
+        padding: 30px 75px 30px 75px;
+    }
+    
+    .header__logo-img{
+        height: 37.5px;
+    }
+        
+    .header__logo-name{
+        font-size: 2.14em;
+    }
+    
+    .header__menu-links a{
+        font-size: 0.95em;
+    }
+    
+    .header__menu{
+        margin: 0;
+    }
+
+    .header__content{
+        width: 100%;
+        height: calc(100% - 104.8px);
+        background: rgba(1, 42, 74,.4);
+    }
+
+    .header__content-slogan{
+        font-size: 5.89em;
+    }
+    
+    .header__separator{
+        height: 5.5px;
+    }
+    
+    .header__content-company{
+        font-size: 3.5em;
+    }
+
+    /* SECTION 1 */
+
+    .container-section{
+        padding: 60px 75px 22.5px 75px;
+        justify-content: space-evenly;
+    }
+
+    /* WHY CHOOSE US */
+    .why-choose-us{
+        flex-direction: row;
+        padding: 0 75px;
+    }
+    .card2{
+        width: 50%;
+        margin-top: 0px;
+    }
+    .card1{
+        height: 525px;
+        border-radius: 10px;
+    }   
+    .sub{
+        font-size: 1.17em;
+    }
+    .sub-title{
+        font-size: 2.34em;
+    }
+
+    /* TESTIMONIALS */
+
+    .testimonials{
+        padding: 0 75px;
+    }
+
+    .testimonials__grid {
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+
+    /* FOOTER */
+
+    .footer{
+        padding-top: 30px;
+    }
+    
+    .media {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .smarttech {
+        width: 35%;
+    }
+    
+    .smarttech__logo {
+        padding: 20px 0 20px 20px;
+    }
+    
+    .contact {
+        width: 30%;
+    }
+    
+    .copyrigth__p {
+        text-align: center;
+    }
+}
