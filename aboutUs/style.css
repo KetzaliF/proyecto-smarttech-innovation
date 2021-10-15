@@ -47,6 +47,7 @@ body::-webkit-scrollbar-thumb{
     background-position: bottom left;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: var(--font-main);
 }
 
 .nav{

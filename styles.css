@@ -44,7 +44,7 @@ body::-webkit-scrollbar-thumb{
     height: 100vh;
     background: var(--bg-header);
     padding: 22.5px 15px;
-    font-size: var(--font-main);
+    font-family: var(--font-main);
     overflow: hidden;
 }
 
