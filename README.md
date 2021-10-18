@@ -18,9 +18,9 @@ _Como proyecto de fin de unidad presentamos la maquetación de un E-Commerce, un
 
 ## Autores ✒️
 
-_Este proyecto se construyo gracias a:_
+_Este proyecto se construyó gracias a:_
 
-* **Arredondo Flores Alexa Ketzali** - *Diseño* - [KetzaliF](https://github.com/KetzaliF)
+* **Arredondo Flores Alexa Ketzali** - *Diseño y Maquetación* - [KetzaliF](https://github.com/KetzaliF)
 * **Bohorquez López Miguel Angel** - *Maquetación* - [AngelBLK](https://github.com/AngelBLK)
 * **Rodríguez García Jesús** - *Maquetación* - [jessgarcia10117](https://github.com/jessgarcia10117)
 
