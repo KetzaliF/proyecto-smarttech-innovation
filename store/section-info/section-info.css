@@ -1,0 +1,56 @@
+@import url(../../index.css);
+
+.container-section{
+   background: var(--bg-light-blue);
+   font-family: var(--font-main);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   padding-top: 30px;
+   margin-bottom: 45px;
+}
+
+.section__card{
+   width: 90%;
+   max-width: 300px;
+   height: auto;
+   display: flex;
+   align-items: center;
+   margin-bottom: 30px;
+}
+
+.section__icon{
+   width: 45px;
+   height: auto;
+   margin-right: 24px;
+}
+
+.section__card-info-title{
+   font-size: 1.37em;
+   font-weight: 600;
+}
+
+.section__card-info-desc{
+   font-size: 0.93em;
+   font-weight: 400;
+   color: var(--gray);
+}
+
+@media screen and (min-width: 500px) and (max-width: 1030px){
+   .container-section{
+      padding: 30px 20px 0 20px;
+      justify-content: space-between;
+   }
+}
+
+@media screen and (min-width: 1030px){
+   .container-section{
+      padding: 30px 75px 0 75px;
+      justify-content: space-between;
+   }
+
+   /* .section__card{
+      margin-bottom: 0;
+   } */
+}
