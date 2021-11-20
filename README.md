@@ -23,8 +23,3 @@ _Este proyecto se construyó gracias a:_
 * **Arredondo Flores Alexa Ketzali** - *Diseño y Maquetación* - [KetzaliF](https://github.com/KetzaliF)
 * **Bohorquez López Miguel Angel** - *Maquetación* - [AngelBLK](https://github.com/AngelBLK)
 * **Rodríguez García Jesús** - *Maquetación* - [jessgarcia10117](https://github.com/jessgarcia10117)
-
-
-## Deployment
-_Puedes ver la pagina con el siguiente enlace_
-* [GitHub Pages](https://ketzalif.github.io/proyecto-smarttech-innovation/index.html)
