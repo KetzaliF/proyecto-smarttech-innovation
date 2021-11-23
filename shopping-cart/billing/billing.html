@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="billing.css">
+   <title>Document</title>
+</head>
+<body>
+   <section class="billing">
+      <div class="billing__method">
+         <p class="billing__method-title">Payment Method</p>
+         <div class="billing__method-option">
+            <input type="radio" id="visa" name="method" value="visa" checked>
+            <label for="visa"><img class="method-img" src="../assets/card-payment.png" alt=""></label>
+         </div>
+
+         <div class="billing__method-option">
+            <input type="radio" id="paypal" name="method" value="paypal">
+            <label for="paypal"><img class="method-img" src="../assets/paypal-payment.png" alt=""></label>
+         </div>
+      </div>
+
+      <div class="billing__data-payment">
+         <div class="payment-details">
+            <p class="billing__data-payment__title">Payment Details</p>
+            <form class="payment-details__form">
+               <label for="nameCard" class="label-form">Name on card</label>
+               <input class="input-form" type="text" id="nameCard" placeholder="Tracey Dames">
+
+               <label for="cardNumber" class="label-form">Card number</label>
+               <input class="input-form" type="text" id="cardNumber" placeholder="0123 4567 8910 112">
+
+               <div class="expiration-cvv">
+                  <label for="expiration" class="label-form">Expiration</label>
+                  <select id="expiration" class="input-form">
+                     <option value="1">01</option>
+                     <option value="2">02</option>
+                     <option value="3">03</option>
+                     <option value="4">04</option>
+                     <option value="5">05</option>
+                     <option value="6">06</option>
+                     <option value="7">07</option>
+                     <option value="8">08</option>
+                     <option value="9">10</option>
+                     <option value="11">11</option>
+                     <option value="12">12</option>
+                  </select>
+                  <span class="expiration-span">/</span>
+                  <select id="expiration" class="input-form">
+                     <option value="2022">2022</option>
+                     <option value="2023">2023</option>
+                     <option value="2024">2024</option>
+                     <option value="2025">2025</option>
+                     <option value="2026">2026</option>
+                     <option value="2027">2027</option>
+                     <option value="2028">2028</option>
+                     <option value="2029">2029</option>
+                     <option value="2030">2030</option>
+                     <option value="2031">2031</option>
+                     <option value="2032">2032</option>
+                     <option value="2033">2033</option>
+                     <option value="2034">2034</option>
+                     <option value="2035">2035</option>
+                     <option value="2036">2036</option>
+                  </select>
+
+                  <label for="cvv" class="label-form">CVV code</label>
+                  <input class="input-form" type="text" id="cvv" maxlength="3" placeholder="032">
+               </div>
+            </form>
+         </div>
+
+         <div class="shipping-address">
+            <p class="billing__data-payment__title">Shipping address</p>
+            <form class="shipping-address__form">
+               <label for="address" class="label-form">Address</label>
+               <input class="input-form" type="text" id="address" placeholder="Buster Brown Rd">
+
+               <label for="state" class="label-form label-form40">State</label>
+               <input class="input-form" type="text" id="state" placeholder="Virginia">
+
+               <label for="zip" class="label-form label-form40">ZIP code</label>
+               <input class="input-form" type="text" id="zip" maxlength="5" placeholder="24983">
+
+               <label for="phoneNumber" class="label-form">Phone number</label>
+               <input class="input-form" type="text" id="phoneNumber" maxlength="10" placeholder="55 2364 1234">
+            </form>
+         </div>
+      </div>
+
+      <p class="billing__confirm">By clicking "Confirm payment" I agree to the company's terms of services</p>
+
+      <button class="btn-secondary">Back</button>
+      <button class="btn-primary">Confirm Payment</button>
+   </section>
+</body>
+</html>

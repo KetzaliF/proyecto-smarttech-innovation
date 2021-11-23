@@ -1,0 +1,56 @@
+@import url(../../index.css);
+
+.billing__method-title {
+   font-size: 1.25em;
+   font-weight: 600;
+   margin-bottom: 20px;
+}
+
+.method-img {
+   width: 30px;
+}
+
+.payment-details,
+.shipping-address {
+   width: 90%;
+   max-width: 500px;
+}
+
+.billing__data-payment__title {
+   font-size: 1.25em;
+   font-weight: 600;
+   margin-bottom: 30px;
+}
+
+.label-form {
+   display: block;
+   font-size: 0.93em;
+   font-weight: 500;
+   margin-bottom: 10px;
+}
+
+.input-form {
+   font-size: 0.75em;
+   font-weight: 500;
+   color: var(--black);
+   background: none;
+   border: none;
+   border-bottom: 2px solid rgba(156, 87, 203, 0.3);
+   outline: none;
+   padding: 0 0 4px 4px;
+}
+
+.input-form::placeholder {
+   color: var(--gray);
+}
+
+.expiration-cvv {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.expiration-span {
+   font-size: 0.75em;
+   font-weight: 500;
+}

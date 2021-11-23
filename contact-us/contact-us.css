@@ -1,0 +1,320 @@
+@import url(../index.css);
+
+.contact_container{
+   background-color: var(--icons-hover);
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   height: 100vh;
+   justify-content: space-evenly;
+   padding: 0;
+}
+
+.contact_txt{
+   width: 320px;
+   height: 30%;
+   margin: 25px auto 35px auto;
+   color: var(--white);
+   text-align: center;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.txt > h1{
+   font-size: 20px;
+   font-weight: 500;
+}
+
+.txt > p{
+   margin-top: 10px;
+   font-size: 12px;
+}
+
+.contact_form{
+   width: 100%;
+   height: 70%;
+   background-color: var(--white);
+   border-radius: 30px 30px 0 0;
+   box-shadow: 0px -10px 30px rgba(0, 119, 182, 0.502);
+}
+
+.con_form > h1{
+   text-align: center;
+   font-size: 25px;
+   color: var(--dark-blue);
+   padding-top: 20px;
+   margin-bottom: 15px;
+}
+
+.con_form > .imput_contact{
+   margin-top: 20px;
+}
+
+.input_contact > h4{
+   font-size: 16px;
+   color: var(--gray);
+   margin: 15px 0 10px 19px;
+   position: relative;
+   font-weight: 600;
+}
+
+.input_contact{
+   margin: 0 10px 0 10px;
+}
+
+input[type="text"],
+input[type="password"]{
+   font-size: 14px;
+   color: var(--gray);
+   width: 340px;
+   margin: 0 auto;
+   height: 35px;
+   border: none;
+   border-radius: 28px;
+   padding-left: 55px;
+   background-color: #E2E2E299;
+   box-sizing: border-box;
+   transition: 0.3s;
+}
+
+.input_Icon > .comment{
+   font-family: "Poppins";
+   border: none;
+   font-size: 15px;
+   width: 100%;
+   height: 85px;
+   border-radius: 28px;
+   padding-left: 55px;
+   padding-top: 7px;
+   background-color: rgba(226, 226, 226, 0.6);
+   box-sizing: border-box;
+   transition: 0.3s;
+   color: var(--gray);
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+.input-Icon textarea[class="comment"]:focus {
+   border-color: var(--icons-hover);
+   box-shadow: 0 0 8px 0 var(--icons-hover);
+}
+
+.input_Icon {
+   position: relative;
+}
+
+.input_Icon i {
+   position: absolute;
+   left: 20px;
+   top: 8px;
+   padding: 2px 2px;
+   color: rgba(128, 128, 128, 0.6);
+   transition: 0.3s;
+}
+
+
+.input_Icon input[type="text"]:focus + i,
+.input_Icon input[type="password"]:focus + i,
+.input_Icon textarea[class="comment"]:focus + i{
+   color: var(--icons-hover);
+}
+
+.button_message > .contact{
+   margin: 18px auto;
+   border: none;
+   width: 161px;
+   height: 37px;
+   color: var(--white);
+   font-size: 15px;
+   background:  var(--icons-hover);
+   border-radius: 10px;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+@media screen and (min-width: 500px) and (max-width: 1030px){
+   body{
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+   }
+   .contact_container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+   }
+   .contact_txt{
+      width: 100%;
+      height: 30%;
+      justify-content: center;
+   }
+   .txt{
+      width: 80%;
+   }
+   .txt > h1{
+      font-size: 44px;
+      margin-top: 10px
+   }
+   .txt > p{
+      font-size: 24px;
+      margin-bottom: 40px;
+      line-height: 50px;
+   }
+   .contact_form{
+      width: 100%;
+      height: 70%;
+   }
+   .con_form{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+   }
+   .con_form > h1{
+      font-size: 45px;
+   }
+   
+   input[type="text"],
+   input[type="password"],
+   .input_Icon textarea[class="comment"]{
+      font-size: 22px;
+      color: var(--gray);
+      background-color: #E2E2E299;
+      width: 550px;
+      height: 65px;
+      padding-left: 80px;
+   }
+   .input_Icon textarea[class="comment"]{
+      width: 550px;
+      height: 150px;
+   }
+   .input_contact{
+      margin-bottom: 5px;
+   }
+   .input_contact > h4{
+      font-size: 25px;
+      margin-bottom: 10px;
+   }
+   .button_message > input[class="contact"]{
+      width: 250px;
+      height: 49px;
+      font-size: 22px;
+      border-radius: 28px;
+   }
+   .input_Icon i {
+      left: 25px;
+      top: 8px;
+      padding: 9px 5px;
+      transition: 0.3s;
+      size: 50px;
+   }
+   i.fas,
+   i.fab {
+      font-size: 30px;
+      width: 20px;
+      height: 40px;
+   }
+}
+
+@media screen and (min-width: 1030px) and (max-width: 1700px){
+   body{
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+   }
+   .contact_container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+   }
+   .contact_txt{
+      width: 50%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+   }
+   .txt{
+      width: 70%;
+   }
+   .txt > h1{
+      font-size: 24px;
+   }
+   .txt > p{
+      font-size: 15px;
+   }
+   .txt > .img{
+      background-image: url(assets/contact-us.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 480px;
+      height: 420px;
+      margin: 22px auto 0 auto;
+      padding: 0;
+   }
+   .contact_form{
+      display: flex;
+      width: 50%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      border-radius: 0;
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+      box-shadow: -10px 0px 30px #0077B680;
+   }
+   input[type="text"],
+   input[type="password"],
+   .input_Icon textarea[class="comment"]{
+      font-size: 18px;
+      color: var(--gray);
+      width: 400px;
+      height: 55px;
+      padding-left: 60px;
+   }
+   .input_Icon textarea[class="comment"]{
+      font-size: 18px;
+      color: var(--gray);
+      width: 400px;
+      height: 150px;
+   }
+   .con_form{
+      margin: 50px auto 0 auto;
+      padding: 0;
+      border: none;
+      background: none;
+   }
+   .con_form > h1{
+      font-size: 38px;
+   }
+   .input_contact > h4{
+      margin-top: 40px;
+      font-size: 20px;
+   }
+   .button_message{
+      margin: 0 auto;
+   }
+   .button_message > .contact{
+      font-family: "Poppins";
+   }
+   .input_Icon i {
+      left: 20px;
+      top: 8px;
+      padding: 9px 5px;
+      transition: 0.3s;
+   }
+   i.fas,
+   i.fab {
+      font-size: 22px;
+      width: 20px;
+      height: 40px;
+   }
+}

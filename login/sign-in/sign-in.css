@@ -1,0 +1,348 @@
+@import url(../../index.css);
+
+.sign_in_container{
+   background-color: var(--icons-hover);
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
+   justify-content: space-evenly;
+} 
+.sign_in_txt{
+   height: 40%;
+   display: flex;
+}
+
+.in_txt{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.in_txt > h1, p{
+   text-align: center;
+   color: var(--white);
+}
+.in_txt > h1{
+   font-size: 20px;
+   font-weight: 500;
+}
+.in_txt > p{
+   font-size: 12px;
+   margin: 10px 20px 30px 10px;
+   line-height: 25px;
+}
+.button_sign_up{
+   width: 159px;
+   height: 53px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.button_sign_up > .btn_sign_up{
+   width: 109px;
+   height: 37px;
+   border-radius: 10px;
+   text-transform: uppercase;
+   color: var(--white);
+   font-size: 15px;
+   font-weight: 500;
+   border: 2px solid var(--white);
+   text-decoration: none;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+} 
+
+.sign_in_form{
+   border-radius: 30px 30px 0 0;
+   background-color: var(--white);
+   height: 60%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 0px -10px 30px rgba(0, 119, 182, 0.502);
+}
+.sign_form{
+   width: 90%;
+   height: 100%;   
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+}
+.sign_form > h1{
+   font-size: 25px;
+   color: var(--dark-blue);
+   text-align: center;
+   margin-top: 30px;
+} 
+.input_sign > h4{
+   font-size: 16px;
+   font-weight: 500;
+   color: var(--gray);
+   margin-left: 19px;
+   margin-bottom: 10px;
+   position: relative;
+}
+.input_sign{
+   margin-top: 20px;
+}
+input[type="text"],
+input[type="password"]{
+   font-size: 14px;
+   color: var(--gray);
+   width: 100%;
+   height: 35px;
+   border: none;
+   border-radius: 28px;
+   padding-left: 62px;
+   background-color: rgba(226, 226, 226, 0.6);
+   margin: 8px 0;
+   box-sizing: border-box;
+   transition: 0.3s;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+   border-color: var(--icons-hover);
+   box-shadow: 0 0 8px 0 var(--icons-hover);
+}
+
+.input_Icon {
+   position: relative;
+}
+
+.input_Icon i {
+   position: absolute;
+   left: 20px;
+   top: 8px;
+   padding: 9px 2px;
+   color: rgba(128, 128, 128, 0.6);
+   transition: 0.3s;
+}
+
+.input_Icon input[type="text"]:focus + i,
+.input_Icon input[type="password"]:focus + i {
+   color: var(--icons-hover);
+}
+.button_login{
+   width: 95px;
+   height: 37px;
+   margin: 30px auto;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.button_login > .login{
+   border: none;
+   width: 95px;
+   height: 37px;
+   color: var(--white);
+   font-size: 15px;
+   font-weight: 500;
+   background:  var(--icons-hover);
+   border-radius: 10px;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+@media screen and (min-width: 500px) and (max-width: 1030px){
+   body{
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+   }
+   .sign_in_container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+   }
+   .sign_in_txt{
+      width: 100%;
+      height: 40%;
+      justify-content: center;
+   }
+   .in_txt{
+      width: 80%;
+   }
+   .in_txt > h1{
+         font-size: 44px;
+         margin-top: 70px
+   }
+   .in_txt > p{
+      font-size: 20px;
+      margin-bottom: 40px;
+      line-height: 50px;
+   }
+   .button_sign_up > .btn_sign_up{
+      width: 100%;
+      height: 100%;
+      font-size: 22px;
+   }
+   .sign_up_form{
+      width: 100%;
+      height: 60%;
+   }
+   .sign_form{
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      height: 100%;
+   }
+   .sign_form > h1{
+      font-size: 45px;
+      margin-top: 60px;
+      margin-bottom: 25px;
+   }
+   
+   input[type="text"],
+   input[type="password"]{
+      font-size: 32px;
+      color: var(--gray);
+      background-color: rgba(226, 226, 226, 0.6);
+      width: 550px;
+      height: 65px;
+      padding-left: 80px;
+   }
+   .input_sign{
+      margin-bottom: 10px;
+      margin-top: 20px;
+   }
+   .input_sign > h4{
+      font-size: 25px;
+      margin-bottom: 10px;
+   }
+   .button_login{
+      width: 100%;
+      height: 100%;
+      margin: 0;
+   }
+   .button_login > input[class="login"]{
+      width: 200px;
+      height: 59px;
+      font-size: 32px;
+      font-weight: 500;
+      border-radius: 28px;
+   }
+   .input_Icon i {
+      left: 25px;
+      top: 8px;
+      padding: 18px 5px;
+      transition: 0.3s;
+      size: 50px;
+   }
+   i.fas,
+   i.fab {
+      font-size: 30px;
+      width: 20px;
+      height: 40px;
+   }
+
+}
+
+@media screen and (min-width: 1030px) and (max-width: 1700px){
+   body{
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+   }
+   .sign_in_container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+   }
+   .sign_in_txt{
+      width: 50%;
+      height: 100%;
+      justify-content: center;
+   }
+   .in_txt{
+      width: 80%;
+      justify-content: flex-start;
+      margin-top: 70px;
+   }
+   .in_txt > h1{
+      font-size: 24px;
+   }
+   .in_txt > p{
+      font-size: 15px;
+   }
+   .button_sign_up > .btn_sign_up{
+      width: 150px;
+      height: 49px;
+      font-size: 18px;
+   }
+   .in_txt > .img{
+      background-image: url(../assets/login.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 415.53px;
+      height: 366px;
+      margin-top: 31px;
+      padding: 0;
+   }
+   .sign_in_form{
+      width: 50%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      border-radius: 0;
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+      box-shadow: -10px 0px 30px rgba(0, 119, 182, 0.502);
+   }
+   .sign_form{
+      display: inline-block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 400px;
+      height: 430px;
+   }
+   .sign_form > h1{
+      font-size: 38px;
+   }
+   
+   input[type="text"],
+   input[type="password"]{
+      font-size: 18px;
+      color: var(--gray);
+      background-color: #E2E2E299;
+      width: 400px;
+      height: 55px;
+   }
+
+   .input_sign > h4{
+      font-size: 20px;
+   }
+   .button_login{
+      width: 100%;
+      height: 100%;
+   }
+   .button_login > input[class="login"]{
+      width: 134px;
+      height: 49px;
+      font-size: 18px;
+      font-weight: 500;
+   }
+   .input_Icon i {
+      left: 20px;
+      top: 8px;
+      padding: 16px 5px;
+      transition: 0.3s;
+   }
+   i.fas,
+   i.fab {
+      font-size: 25px;
+      width: 20px;
+      height: 40px;
+   }
+}
